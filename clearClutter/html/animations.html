@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+</head>
+<style>
+    .container{
+        background: greenyellow;
+        height: 80vh;
+        width: 30vw;
+    }
+    .box{
+        width: 34px;
+        height: 45px;
+        /* background: red; */
+        /* animation-name: abbasikaanimationhehe;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 1s;
+        animation-direction: reverse; */
+        /* animation-play-state: paused;  */
+        /* Shortcut to write animation properties>>
+        animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: abbasikaanimationhehe 2s ease-in-out 2s 1 forwards  ,abbasi2 3s ease-in-out 3s 1 ;
+        /* fill mode>backward will make it go back to original state while forward will make it to the final position defined in animation but to use this animation-iteration-count should not be infinite */
+    }
+    @keyframes abbasikaanimationhehe {
+        from{
+            background: #000;
+        }
+        to{
+            background: red;
+            /* transform: translateX(1000px); */
+        }
+    }
+    @keyframes abbasi2 {
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+        }
+        50%{
+            transform: rotate(220deg);
+        }
+        80%{
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(310deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

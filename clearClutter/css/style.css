@@ -1,0 +1,19 @@
+body{
+    background: black;
+    color:  white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    box-shadow: 2px 2px 2px 4px red;
+    background: red;
+    cursor: pointer;
+    border-radius:5px ;
+}
+h1:hover{
+    background: white;
+    color: red;
+    transition: 0.3s all ease;
+}
